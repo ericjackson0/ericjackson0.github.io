@@ -11,23 +11,26 @@ body div {
   align-items: center;
   display: flex;
   font-family: 'Lucida Console', 'Courier New', monospace;
-  font-size: xx-large;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
   justify-content: center;
 }
 
 .text span {
   color: white;
-  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🫠</text></svg>"),
-    auto;
-  text-shadow: black 1px 1px;
+  text-shadow: black 0.1rem 0.1rem;
 }
 
 .text span a {
   color: white;
 }
 
+.text .letterO {
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>✌🏻</text></svg>"),
+    auto;
+}
+
 .wrapper {
-  animation: rainbow 18s ease infinite;
+  animation: rainbow 25s ease-in-out infinite;
   background: linear-gradient(
     124deg,
     #ff2400,
@@ -44,7 +47,6 @@ body div {
   bottom: 0;
   height: 100%;
   left: 0;
-  opacity: 50%;
   position: absolute;
   right: 0;
   top: 0;
