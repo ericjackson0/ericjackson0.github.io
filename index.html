@@ -5,13 +5,19 @@
     <link href="styles.css" rel="stylesheet" />
     <title>A Wonderful Website by Eric Jackson</title>
   </head>
-  <body>
-    <div class="wrapper">
-      <div class="text">
-        <span id="brand">This is my pers<span class="letterO">o</span>na<a href="https://linkedin.com/in/ericjackson0">l</a> brand.
-        </span>
-      </div>
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <div class="wrapper wrapper--rainbow">
+    <body>
+      <header>
+        <button id="theme-grayscale" onclick="setGrayscaleTheme()">⚫️⚪️</button>
+        <button id="theme-rainbow" onclick="setRainbowTheme()">🔴🟠🟡🟢🔵🟣</span></button>
+      </header>
+      <main>
+        <div class="text text--brand">
+          <span id="brand">This is my pers<span class="letterO">o</span>na<a href="https://linkedin.com/in/ericjackson0">l</a> brand.
+          </span>
+        </div>
+      </main>
+      <script src="./src/main.js"></script>
+    </body>
+  </div>
 </html>
